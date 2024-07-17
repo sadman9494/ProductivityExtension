@@ -22,6 +22,7 @@ blockBtn.addEventListener('click',async (e)=>{
     urlStorage = urlStorage.urlStorage
     urlStorage.push(url)
     await chrome.storage.local.set({urlStorage:urlStorage})
+    urlPlaceHolder.innerText = `Added To Block List`
 
 })
 
